@@ -1,0 +1,69 @@
+$bp-large: 78.15em; // 1250px
+$bp-medium: 61.25em; // 980px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+$color-white: rgb(230, 230, 230);
+$color-primary: #13a878;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: #d5d5d5;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.headerCyan {
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #000 50%, $color-primary);
+  background-size: cover;
+  background-position: top;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 100%, 0 0);
+    height: 100vh;
+  }
+}
+
+.headerGray {
+  background-color: #1d1d1d;
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 100%, 0 0);
+    height: 100vh;
+  }
+}
+
+.section1 {
+  padding: 20rem 0;
+}

@@ -1,0 +1,61 @@
+$color-white: rgb(230, 230, 230);
+$color-primary-light-darker: #50b33fcc;
+$color-primary-dark: #16a072cc;
+$color-black: #000;
+$default-font-size: 1.8rem;
+$smaller-font-size: 1.6rem;
+
+// .heading-primary {
+//   color: $color-white;
+//   text-transform: uppercase;
+//   margin-bottom: 6rem;
+//   backface-visibility: hidden;
+//   position: absolute;
+//   top: 15rem;
+//   left: 15rem;
+//   font-family: Chelsea Market;
+
+//   /* backface-visibility: hidden; -hogy ne razkodjon */
+
+//   &--main {
+//     display: block;
+//     font-size: 7rem;
+//     font-weight: 700;
+//     letter-spacing: 1rem;
+
+//     animation-name: moveInLeft;
+//     animation-duration: 1s;
+//     animation-timing-function: ease-out;
+//   }
+
+//   &--sub {
+//     display: block;
+//     font-size: 4rem;
+//     font-weight: 700;
+//     letter-spacing: 1rem;
+
+//     animation: moveInRight 1s ease-out;
+//   }
+// }
+
+.heading-secondary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  color: rgb(155, 155, 155);
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+  position: absolute;
+  top: 51%;
+  left: 13%;
+  font-family: Indie Flower;
+
+  animation: moveInBottom 1s ease-out;
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}

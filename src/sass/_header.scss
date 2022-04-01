@@ -1,0 +1,245 @@
+$color-primary: #13a878;
+
+.header {
+  grid-area: head;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    height: 7rem;
+    display: block;
+
+    animation: rotateLogo 1s;
+  }
+
+  &__logo_light {
+    margin-top: 1rem;
+    position: absolute;
+    margin-left: 1rem;
+    height: 7rem;
+    display: block;
+
+    animation: rotateLogo 1s;
+  }
+}
+
+////////////
+// BUTTON //
+////////////
+
+.flat-button {
+  color: $color-primary;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  position: absolute;
+  top: 64%;
+  left: 13%;
+  width: 100%;
+  max-width: 220px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+}
+
+.flat-button div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.flat-button span.bg {
+  background: $color-primary;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: -5%;
+  transition: 0.3s ease-in-out all;
+  transform: skewX(-10deg);
+}
+
+.flat-button:hover span.bg {
+  width: 110%;
+}
+
+.flat-button span.base {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $color-primary;
+}
+
+.flat-button span.text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.flat-button span.text:hover {
+  color: #1d1d1d;
+}
+///////////////////////////////////////////
+.flat-buttonFirst {
+  color: $color-primary;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  position: absolute;
+  top: 64%;
+  left: 13%;
+  width: 100%;
+  max-width: 220px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+}
+
+.flat-buttonFirst div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.flat-buttonFirst span.bg {
+  background: $color-primary;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: -5%;
+  transition: 0.3s ease-in-out all;
+  transform: skewX(-10deg);
+}
+
+.flat-buttonFirst:hover span.bg {
+  width: 110%;
+}
+
+.flat-buttonFirst span.base {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $color-primary;
+}
+
+.flat-buttonFirst span.text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.flat-buttonFirst span.text:hover {
+  color: #1d1d1d;
+}
+
+//////////////////
+// HOVER EFFECT //
+//////////////////
+
+#box1 {
+  display: flex;
+  position: absolute;
+  top: 15rem;
+  left: 15rem;
+  cursor: default;
+
+  animation: moveInLeft 1s ease-out;
+}
+
+#box2 {
+  display: flex;
+  position: absolute;
+  top: 23rem;
+  left: 13rem;
+  cursor: default;
+
+  animation: moveInRight 1s ease-out;
+}
+
+#me {
+  display: flex;
+  margin-left: 25px;
+  cursor: default;
+}
+
+.alpha1 {
+  color: #ffffff;
+  font-size: 7rem;
+  font-family: Chelsea Market;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  cursor: default;
+}
+
+.alpha2 {
+  color: #ffffff;
+  font-size: 5rem;
+  font-family: Chelsea Market;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  cursor: default;
+}
+
+.alpha1.animated {
+  color: $color-primary;
+  animation: rubberBand 0.7s ease-in-out 1;
+  cursor: default;
+}
+
+.alpha2.animated {
+  color: $color-primary;
+  animation: rubberBand 0.7s ease-in-out 1;
+  cursor: default;
+}
+
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    -ms-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    -ms-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    -ms-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    -ms-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    -ms-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
