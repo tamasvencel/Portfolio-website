@@ -158,6 +158,11 @@ $color-primary: #13a878;
   cursor: default;
 
   animation: moveInLeft 1s ease-out;
+
+  @include respond(phone) {
+    left: 6rem;
+    top: 24rem;
+  }
 }
 
 #box2 {
@@ -168,12 +173,21 @@ $color-primary: #13a878;
   cursor: default;
 
   animation: moveInRight 1s ease-out;
+
+  @include respond(phone) {
+    top: 29rem;
+    left: 5rem;
+  }
 }
 
 #me {
   display: flex;
   margin-left: 25px;
   cursor: default;
+
+  @include respond(phone) {
+    margin-left: 10px;
+  }
 }
 
 .alpha1 {
@@ -181,8 +195,12 @@ $color-primary: #13a878;
   font-size: 7rem;
   font-family: Chelsea Market;
   font-weight: 700;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
   cursor: default;
+
+  @include respond(phone) {
+    font-size: 4rem;
+  }
 }
 
 .alpha2 {
@@ -190,8 +208,12 @@ $color-primary: #13a878;
   font-size: 5rem;
   font-family: Chelsea Market;
   font-weight: 700;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
   cursor: default;
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
 }
 
 .alpha1.animated {
@@ -242,4 +264,27 @@ $color-primary: #13a878;
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
+}
+
+//////////////////////
+// Typing animation //
+//////////////////////
+
+.main-text {
+  position: absolute;
+  top: 5%;
+  left: 55%;
+  transform: translateY(-10%);
+}
+
+.main-text h1 {
+  font-size: 120px;
+  color: #3c3c3c;
+  font-weight: 800;
+}
+
+.main-text span {
+  color: #767676;
+  // color: #7a1414;
+  letter-spacing: 2px;
 }
