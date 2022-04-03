@@ -1,5 +1,6 @@
 $color-primary: #13a878;
 $color-secondary: rgb(151, 24, 24);
+$color-tertiary: rgb(151, 105, 77);
 
 .header {
   grid-area: head;
@@ -353,6 +354,6 @@ $color-secondary: rgb(151, 24, 24);
 }
 
 .main-text span {
-  color: rgb(151, 105, 77);
+  color: $color-tertiary;
   letter-spacing: 2px;
 }
