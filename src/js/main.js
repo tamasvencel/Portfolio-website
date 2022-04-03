@@ -42,8 +42,8 @@ function applyCursorRippleEffect(e) {
   ripple.className = "ripple";
   document.body.appendChild(ripple);
 
-  ripple.style.left = `${e.clientX}px`;
-  ripple.style.top = `${e.clientY}px`;
+  ripple.style.left = `${e.clientX - 4}px`;
+  ripple.style.top = `${e.clientY - 3.5}px`;
 
   ripple.style.animation = "ripple-effect .4s  linear";
   ripple.onanimationend = () => document.body.removeChild(ripple);
