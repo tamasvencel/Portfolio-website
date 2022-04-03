@@ -39,7 +39,7 @@ $smaller-font-size: 1.6rem;
 // }
 
 .heading-secondary {
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -47,11 +47,21 @@ $smaller-font-size: 1.6rem;
   letter-spacing: 0.2rem;
   transition: all 0.2s;
   position: absolute;
-  top: 51%;
+  bottom: 42%;
   left: 13%;
   font-family: Indie Flower;
 
   animation: moveInBottom 1s ease-out;
+
+  @include respond(tab-land) {
+    bottom: 40%;
+    font-size: 2rem;
+  }
+
+  @include respond(phone) {
+    bottom: 45%;
+    font-size: 2rem;
+  }
 }
 
 .heading-tertiary {

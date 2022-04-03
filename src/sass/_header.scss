@@ -1,4 +1,5 @@
 $color-primary: #13a878;
+$color-secondary: rgb(151, 24, 24);
 
 .header {
   grid-area: head;
@@ -32,18 +33,26 @@ $color-primary: #13a878;
 
 .flat-button {
   color: $color-primary;
-  font-size: 2.2rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   text-decoration: none;
   position: absolute;
-  top: 64%;
+  bottom: 30%;
   left: 13%;
-  width: 100%;
-  max-width: 220px;
-  height: 50px;
+  width: 120%;
+  max-width: 240px;
+  height: 70px;
   display: block;
   text-align: center;
-  line-height: 50px;
+  line-height: 70px;
+
+  @include respond(tab-land) {
+    bottom: 23%;
+    font-size: 2.2rem;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+  }
 }
 
 .flat-button div {
@@ -90,18 +99,26 @@ $color-primary: #13a878;
 ///////////////////////////////////////////
 .flat-buttonFirst {
   color: $color-primary;
-  font-size: 2.2rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   text-decoration: none;
   position: absolute;
-  top: 64%;
+  bottom: 30%;
   left: 13%;
-  width: 100%;
-  max-width: 220px;
-  height: 50px;
+  width: 120%;
+  max-width: 240px;
+  height: 70px;
   display: block;
   text-align: center;
-  line-height: 50px;
+  line-height: 70px;
+
+  @include respond(tab-land) {
+    bottom: 23%;
+    font-size: 2.2rem;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+  }
 }
 
 .flat-buttonFirst div {
@@ -153,30 +170,53 @@ $color-primary: #13a878;
 #box1 {
   display: flex;
   position: absolute;
-  top: 15rem;
-  left: 15rem;
+  bottom: 68%;
+  left: 12.5%;
   cursor: default;
 
   animation: moveInLeft 1s ease-out;
 
+  @include respond(tab-land) {
+    bottom: 68%;
+  }
+
   @include respond(phone) {
-    left: 6rem;
-    top: 24rem;
+    left: 3.5%;
+    bottom: 63.5%;
   }
 }
 
 #box2 {
   display: flex;
   position: absolute;
-  top: 23rem;
-  left: 13rem;
+  bottom: 59%;
+  left: 11%;
   cursor: default;
 
   animation: moveInRight 1s ease-out;
 
   @include respond(phone) {
-    top: 29rem;
-    left: 5rem;
+    left: 1.5%;
+    bottom: 58%;
+  }
+}
+
+#box3 {
+  display: flex;
+  position: absolute;
+  bottom: 49%;
+  left: 11%;
+  cursor: default;
+
+  animation: moveInLeft 1s ease-out;
+
+  @include respond(tab-land) {
+    bottom: 48%;
+  }
+
+  @include respond(phone) {
+    bottom: 52%;
+    left: 1.5%;
   }
 }
 
@@ -192,27 +232,37 @@ $color-primary: #13a878;
 
 .alpha1 {
   color: #ffffff;
+  font-size: 9rem;
+  font-family: Chelsea Market;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  cursor: default;
+
+  @include respond(tab-land) {
+    font-size: 7rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+}
+
+.alpha2 {
+  color: #ffffff;
   font-size: 7rem;
   font-family: Chelsea Market;
   font-weight: 700;
   letter-spacing: 0.2rem;
   cursor: default;
 
-  @include respond(phone) {
-    font-size: 4rem;
+  @include respond(tab-land) {
+    font-size: 5rem;
   }
-}
-
-.alpha2 {
-  color: #ffffff;
-  font-size: 5rem;
-  font-family: Chelsea Market;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  cursor: default;
 
   @include respond(phone) {
     font-size: 3rem;
+    font-weight: 100;
   }
 }
 
@@ -272,19 +322,37 @@ $color-primary: #13a878;
 
 .main-text {
   position: absolute;
-  top: 5%;
-  left: 55%;
+  bottom: 48%;
+  left: 25.5%;
   transform: translateY(-10%);
+  font-family: Chelsea Market;
+
+  @include respond(tab-land) {
+    bottom: 46.8%;
+    left: 25.8%;
+  }
+
+  @include respond(phone) {
+    bottom: 51.3%;
+    left: 24%;
+  }
 }
 
 .main-text h1 {
-  font-size: 120px;
+  font-size: 7rem;
   color: #3c3c3c;
   font-weight: 800;
+
+  @include respond(tab-land) {
+    font-size: 5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3rem;
+  }
 }
 
 .main-text span {
-  color: #767676;
-  // color: #7a1414;
+  color: rgb(151, 105, 77);
   letter-spacing: 2px;
 }
