@@ -322,25 +322,13 @@ $color-tertiary: rgb(151, 105, 77);
 //////////////////////
 
 .main-text {
-  position: absolute;
-  bottom: 48%;
-  left: 25%;
-  transform: translateY(-10%);
+  position: relative;
+  // transform: translateX(30%);
   font-family: Chelsea Market;
-
-  @include respond(tab-land) {
-    bottom: 46.8%;
-    left: 25.8%;
-  }
-
-  @include respond(phone) {
-    bottom: 51.5%;
-    left: 29%;
-  }
 }
 
 .main-text h1 {
-  font-size: 7rem;
+  font-size: 6.85rem;
   color: #3c3c3c;
   font-weight: 800;
 
@@ -349,11 +337,20 @@ $color-tertiary: rgb(151, 105, 77);
   }
 
   @include respond(phone) {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
+    margin-top: 3px;
   }
 }
 
 .main-text span {
   color: $color-tertiary;
   letter-spacing: 2px;
+}
+
+.fixBeforeTyping {
+  margin-right: 30px;
+
+  @include respond(phone) {
+    margin-right: 10px;
+  }
 }
