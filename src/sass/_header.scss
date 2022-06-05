@@ -103,10 +103,10 @@ $color-white: rgb(221, 221, 221);
   position: absolute;
   left: 0;
   top: 0;
-}
 
-@include respond(phone) {
-  top: 0;
+  @include respond(phone) {
+    top: 0;
+  }
 }
 
 .flat-button span.text:hover {
@@ -180,10 +180,10 @@ $color-white: rgb(221, 221, 221);
   position: absolute;
   left: 0;
   top: 0;
-}
 
-@include respond(phone) {
-  top: 0;
+  @include respond(phone) {
+    top: 0;
+  }
 }
 
 .flat-buttonFirst span.text:hover {
