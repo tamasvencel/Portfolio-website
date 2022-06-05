@@ -23,6 +23,10 @@ html {
   @media only screen and (max-width: $bp-medium) {
     font-size: 50%;
   }
+
+  @include respond(phone) {
+    font-size: 40%;
+  }
 }
 
 body {
@@ -30,8 +34,7 @@ body {
     170deg,
     #1d1d1d 10%,
     #1d2d2d 30%,
-    #153f3d 50%,
-    #153f3d 55%,
+    #184a48 40%,
     #1d2d2d 70%,
     #1d1d1d 100%
   );
