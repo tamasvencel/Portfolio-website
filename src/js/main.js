@@ -65,15 +65,19 @@ function applyCursorRippleEffect(e) {
 //////////////////////////////
 // Mixitup filter portfolio //
 //////////////////////////////
+let containerEl = document.querySelector(".work__container");
+let mixerPortfolio;
 
-let mixerPortfolio = mixitup(".work__container", {
-  selectors: {
-    target: ".work__card",
-  },
-  animation: {
-    duration: 300,
-  },
-});
+if (containerEl) {
+  mixerPortfolio = mixitup(containerEl, {
+    selectors: {
+      target: ".work__card",
+    },
+    animation: {
+      duration: 300,
+    },
+  });
+}
 
 // link active work
 const linkWork = document.querySelectorAll(".work__item");
