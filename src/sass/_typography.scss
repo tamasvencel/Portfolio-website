@@ -1,4 +1,4 @@
-$color-white: rgb(230, 230, 230);
+$color-white: rgb(221, 221, 221);
 $color-primary-light-darker: #50b33fcc;
 $color-primary-dark: #16a072cc;
 $color-black: #000;
@@ -68,4 +68,17 @@ $smaller-font-size: 1.6rem;
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+// Projects section
+
+#projectsTitle {
+  display: flex;
+  position: relative;
+  margin-top: 15%;
+  margin-left: 37%;
+  cursor: default;
+
+  @include respond(phone) {
+  }
 }

@@ -30,6 +30,19 @@ window.addEventListener("load", function () {
   }
 });
 
+window.addEventListener("load", function () {
+  let elements2 = document.getElementsByClassName("projectsAlpha");
+  for (let i = 0; i <= elements2.length; i++) {
+    elements2[i].addEventListener("animationend", function (e) {
+      elements2[i].classList.remove("animated");
+    });
+
+    elements2[i].addEventListener("mouseover", function (e) {
+      elements2[i].classList.add("animated");
+    });
+  }
+});
+
 /////////////////////
 // Click animation //
 /////////////////////
