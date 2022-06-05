@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Indie+Flower&display=swap" rel="stylesheet">
 
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon" />
 
@@ -105,6 +106,8 @@
       </div>
     </header>
 
+                        <!--PROJECTS-->
+
     <section class="projects sectionProjects" id="projects">
       <div id="projectsTitle">
         <span id="me">
@@ -124,10 +127,51 @@
     </div>
 
       <div class="work__filters">
-        <span class="work__item">All</span>
-        <span class="work__item">asd1</span>
-        <span class="work__item">asd2</span>
-        <span class="work__item">asd3</span>
+        <span class="work__item active-work" data-filter="all">All</span>
+        <span class="work__item" data-filter=".JSchmedtmannCourses">Jonas Schmedtmann Course</span>
+        <span class="work__item" data-filter=".NoCourse">No Course</span>
+      </div>
+
+      <div class="work__container container grid">
+        <div class="work__card mix JSchmedtmannCourses">
+          <img src="/src/img/OmnifoodIndex.jpg" alt="Omnifood" class="work__img">
+          <h3 class="work__title">Omnifood</h3>
+          <a href="#" class="work__button">
+            View <box-icon name='right-arrow-alt work__icon'></box-icon>
+          </a>
+        </div>
+
+        <div class="work__card mix NoCourse">
+          <img src="/src/img/ExploreTransylvaniaIndex.jpg" alt="ExploreTransylvania" class="work__img">
+          <h3 class="work__title">ExploreTransylvania</h3>
+          <a href="#" class="work__button">
+            View <box-icon name='right-arrow-alt work__icon'></box-icon>
+          </a>
+        </div>
+
+        <div class="work__card mix JSchmedtmannCourses">
+          <img src="/src/img/NatoursIndex.jpg" alt="Natours" class="work__img">
+          <h3 class="work__title">Natours</h3>
+          <a href="#" class="work__button">
+            View <box-icon name='right-arrow-alt work__icon'></box-icon>
+          </a>
+        </div>
+
+        <div class="work__card mix JSchmedtmannCourses">
+          <img src="/src/img/BankistIndex.jpg" alt="Bankist" class="work__img">
+          <h3 class="work__title">Bankist</h3>
+          <a href="#" class="work__button">
+            View <box-icon name='right-arrow-alt work__icon'></box-icon>
+          </a>
+        </div>
+
+        <div class="work__card mix JSchmedtmannCourses">
+          <img src="/src/img/ForkifyIndex.jpg" alt="Forkify" class="work__img">
+          <h3 class="work__title">Forkify</h3>
+          <a href="#" class="work__button">
+            View <box-icon name='right-arrow-alt work__icon'></box-icon>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -141,5 +185,6 @@
       })
     </script>
 
+    <script src="/src/js/mixitup.min.js"></script>
   </body>
 </html>

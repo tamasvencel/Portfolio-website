@@ -61,3 +61,26 @@ function applyCursorRippleEffect(e) {
   ripple.style.animation = "ripple-effect .4s  linear";
   ripple.onanimationend = () => document.body.removeChild(ripple);
 }
+
+//////////////////////////////
+// Mixitup filter portfolio //
+//////////////////////////////
+
+let mixerPortfolio = mixitup(".work__container", {
+  selectors: {
+    target: ".work__card",
+  },
+  animation: {
+    duration: 300,
+  },
+});
+
+// link active work
+const linkWork = document.querySelectorAll(".work__item");
+
+function activeWork() {
+  linkWork.forEach((l) => l.classList.remove("active-work"));
+  this.classList.add("active-work");
+}
+
+linkWork.forEach((l) => l.addEventListener("click", activeWork));
