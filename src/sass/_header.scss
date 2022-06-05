@@ -105,7 +105,7 @@ $color-white: rgb(221, 221, 221);
   top: 0;
 
   @include respond(phone) {
-    top: 0;
+    top: -10px;
   }
 }
 
@@ -182,7 +182,7 @@ $color-white: rgb(221, 221, 221);
   top: 0;
 
   @include respond(phone) {
-    top: 0;
+    top: -10px;
   }
 }
 
