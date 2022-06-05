@@ -65,6 +65,7 @@ function applyCursorRippleEffect(e) {
 //////////////////////////////
 // Mixitup filter portfolio //
 //////////////////////////////
+
 let containerEl = document.querySelector(".work__container");
 let mixerPortfolio;
 
@@ -88,3 +89,17 @@ function activeWork() {
 }
 
 linkWork.forEach((l) => l.addEventListener("click", activeWork));
+
+///////////////////
+// Smooth scroll //
+///////////////////
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
