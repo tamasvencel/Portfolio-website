@@ -46,6 +46,7 @@ $color-white: rgb(221, 221, 221);
   height: 70px;
   display: block;
   text-align: center;
+  vertical-align: middle;
   line-height: 70px;
 
   @include respond(tab-land) {
@@ -58,8 +59,10 @@ $color-white: rgb(221, 221, 221);
 
   @include respond(phone) {
     width: 40%;
-    height: 30px;
-    line-height: 30px;
+    height: 35px;
+    line-height: 35px;
+    bottom: 26%;
+    vertical-align: middle;
   }
 }
 
@@ -121,6 +124,7 @@ $color-white: rgb(221, 221, 221);
   height: 70px;
   display: block;
   text-align: center;
+  vertical-align: middle;
   line-height: 70px;
 
   @include respond(tab-land) {
@@ -133,8 +137,10 @@ $color-white: rgb(221, 221, 221);
 
   @include respond(phone) {
     width: 40%;
-    height: 30px;
-    line-height: 30px;
+    height: 35px;
+    line-height: 35px;
+    bottom: 26%;
+    vertical-align: middle;
   }
 }
 
