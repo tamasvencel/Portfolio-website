@@ -46,7 +46,6 @@ $color-white: rgb(221, 221, 221);
   height: 70px;
   display: block;
   text-align: center;
-  vertical-align: middle;
   line-height: 70px;
 
   @include respond(tab-land) {
@@ -62,7 +61,6 @@ $color-white: rgb(221, 221, 221);
     height: 35px;
     line-height: 35px;
     bottom: 26%;
-    vertical-align: middle;
   }
 }
 
@@ -107,6 +105,10 @@ $color-white: rgb(221, 221, 221);
   top: 0;
 }
 
+@include respond(phone) {
+  top: 0;
+}
+
 .flat-button span.text:hover {
   color: #1d1d1d;
 }
@@ -124,7 +126,6 @@ $color-white: rgb(221, 221, 221);
   height: 70px;
   display: block;
   text-align: center;
-  vertical-align: middle;
   line-height: 70px;
 
   @include respond(tab-land) {
@@ -140,7 +141,6 @@ $color-white: rgb(221, 221, 221);
     height: 35px;
     line-height: 35px;
     bottom: 26%;
-    vertical-align: middle;
   }
 }
 
@@ -179,6 +179,10 @@ $color-white: rgb(221, 221, 221);
   height: 100%;
   position: absolute;
   left: 0;
+  top: 0;
+}
+
+@include respond(phone) {
   top: 0;
 }
 
