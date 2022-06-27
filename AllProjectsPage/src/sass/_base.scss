@@ -1,0 +1,74 @@
+$bp-large: 78.15em; // 1250px
+$bp-medium: 61.25em; // 980px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.25em; // 500px
+$color-white: rgb(221, 221, 221);
+$color-primary: #1ba19e;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+
+  @include respond(phone) {
+    font-size: 40%;
+  }
+}
+
+body {
+  background-image: linear-gradient(
+    170deg,
+    #1d1d1d 10%,
+    #184a48 40%,
+    #184a48 60%,
+    #1d1d1d 100%
+  );
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+// .headerCyan {
+//   height: 100vh;
+//   background-image: linear-gradient(to bottom right, #000 50%, $color-primary);
+//   background-size: cover;
+//   background-position: top;
+
+//   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+//     -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 100%, 0 0);
+//     clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 100%, 0 0);
+//     height: 100vh;
+//   }
+// }
+
+.headerGray {
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+
+  // @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+  //   -webkit-clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 100%, 0 0);
+  //   clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 100%, 0 0);
+  //   height: 100vh;
+  // }
+}

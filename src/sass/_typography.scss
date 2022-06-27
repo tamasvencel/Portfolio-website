@@ -77,6 +77,20 @@ $smaller-font-size: 1.6rem;
   position: relative;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3%;
+  cursor: default;
+
+  @include respond(phone) {
+  }
+}
+
+// Aboutme section
+#projectsTitleAboutMe {
+  display: flex;
+  position: relative;
+  position: absolute;
+  margin-top: -15%;
+  margin-left: 27%;
   cursor: default;
 
   @include respond(phone) {

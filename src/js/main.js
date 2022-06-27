@@ -103,3 +103,203 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     });
   });
 });
+
+////////////////
+// Skills svg //
+////////////////
+
+let path = document.querySelector(".line-container-svg").lastElementChild;
+let pathLength = path.getTotalLength();
+
+path.style.strokeDasharray = pathLength + " " + pathLength;
+
+path.style.strokeDashoffset = pathLength;
+
+window.addEventListener("scroll", () => {
+  // What % down is it?
+  var scrollPercentage =
+    (document.documentElement.scrollTop + document.body.scrollTop) /
+    (document.documentElement.scrollHeight -
+      document.documentElement.clientHeight);
+  // Length to offset the dashes
+  var drawLength = pathLength * scrollPercentage;
+
+  // Draw in reverse
+  path.style.strokeDashoffset = pathLength - drawLength + 650;
+});
+
+////////////////
+// sticky svg //
+////////////////
+$(document).ready(function () {
+  $(".sectionSkills").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".line-container").addClass("testDiv");
+      } else {
+        $(".line-container").removeClass("testDiv");
+      }
+    },
+    {
+      offset: "-100px;",
+    }
+  );
+
+  $(".sectionAboutMe").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".line-container").fadeOut();
+      } else {
+        $(".line-container").fadeIn();
+      }
+    },
+    {
+      offset: "1200px;",
+    }
+  );
+});
+
+/////////////////
+// skill icons //
+/////////////////
+
+// HTML
+$(document).scroll(function () {
+  var y = $(this).scrollTop();
+  if ((y > 5900) & (y < 12800)) {
+    $(".htmlIcon").fadeIn();
+  } else {
+    $(".htmlIcon").fadeOut();
+  }
+});
+
+// CSS
+$(document).scroll(function () {
+  var y = $(this).scrollTop();
+  if ((y > 6600) & (y < 12800)) {
+    $(".cssIcon").fadeIn();
+  } else {
+    $(".cssIcon").fadeOut();
+  }
+});
+
+// JS
+$(document).scroll(function () {
+  var y = $(this).scrollTop();
+  if ((y > 7700) & (y < 12800)) {
+    $(".jsIcon").fadeIn();
+  } else {
+    $(".jsIcon").fadeOut();
+  }
+});
+
+// SASS
+$(document).scroll(function () {
+  var y = $(this).scrollTop();
+  if ((y > 8300) & (y < 12800)) {
+    $(".sassIcon").fadeIn();
+  } else {
+    $(".sassIcon").fadeOut();
+  }
+});
+
+// B
+$(document).scroll(function () {
+  var y = $(this).scrollTop();
+  if ((y > 9000) & (y < 12800)) {
+    $(".bootstrapIcon").fadeIn();
+  } else {
+    $(".bootstrapIcon").fadeOut();
+  }
+});
+
+// NODEJS
+$(document).scroll(function () {
+  var y = $(this).scrollTop();
+  if ((y > 10300) & (y < 12800)) {
+    $(".nodejsIcon").fadeIn();
+  } else {
+    $(".nodejsIcon").fadeOut();
+  }
+});
+
+// REACTJS
+$(document).scroll(function () {
+  var y = $(this).scrollTop();
+  if ((y > 11000) & (y < 12800)) {
+    $(".reactjsIcon").fadeIn();
+  } else {
+    $(".reactjsIcon").fadeOut();
+  }
+});
+
+// NPM
+$(document).scroll(function () {
+  var y = $(this).scrollTop();
+  if ((y > 11600) & (y < 12800)) {
+    $(".npmIcon").fadeIn();
+  } else {
+    $(".npmIcon").fadeOut();
+  }
+});
+
+// // ELECTRON
+// $(document).scroll(function () {
+//   var y = $(this).scrollTop();
+//   if ((y > 12000) & (y < 12800)) {
+//     $(".electronIcon").fadeIn();
+//   } else {
+//     $(".electronIcon").fadeOut();
+//   }
+// });
+
+// // VSCODE
+// $(document).scroll(function () {
+//   var y = $(this).scrollTop();
+//   if ((y > 12500) & (y < 12800)) {
+//     $(".vscodeIcon").fadeIn();
+//   } else {
+//     $(".vscodeIcon").fadeOut();
+//   }
+// });
+
+// background color change after about me
+
+// footer touch background scale
+$(document).ready(function () {
+  $(".footer").waypoint(
+    function (direction) {
+      if (direction == "down") {
+        $(".sectionAboutMe").addClass("footerTouchTransform");
+        $(".desertSection").addClass("footerTouchTransform");
+      } else {
+        $(".sectionAboutMe").removeClass("footerTouchTransform");
+        $(".desertSection").removeClass("footerTouchTransform");
+      }
+    },
+    {
+      offset: "-500px",
+    }
+  );
+});
+
+$(document).scroll(function () {
+  var y = $(this).scrollTop();
+  console.log(y);
+  if (y > 15500) {
+    $(".footer").addClass("footerTouchTransform");
+  } else {
+    $(".footer").removeClass("footerTouchTransform");
+  }
+});
+
+// Scroll reveal
+ScrollReveal({ reset: true });
+ScrollReveal({ duration: 1500 });
+ScrollReveal().reveal(".work__card");
+ScrollReveal().reveal(".allProjectsLink", { delay: 300 });
+ScrollReveal().reveal(".aboutmeTitle");
+ScrollReveal().reveal(".aboutMeParagraph");
+ScrollReveal().reveal(".techSVG");
+ScrollReveal().reveal(".designSVG");
+ScrollReveal().reveal(".internetSVG", { delay: 300 });

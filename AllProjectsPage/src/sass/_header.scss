@@ -1,0 +1,406 @@
+$color-primary: #1ba19e;
+$color-secondary: rgb(118, 22, 22);
+$color-tertiary: rgb(151, 105, 77);
+$color-white: rgb(221, 221, 221);
+
+.header {
+  grid-area: head;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    height: 7rem;
+    display: block;
+
+    animation: rotateLogo 1s;
+  }
+
+  &__logo_light {
+    margin-top: 1rem;
+    position: absolute;
+    margin-left: 1rem;
+    height: 7rem;
+    display: block;
+
+    animation: rotateLogo 1s;
+  }
+}
+
+////////////
+// BUTTON //
+////////////
+
+.flat-button {
+  color: $color-primary;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 30%;
+  left: 13%;
+  width: 120%;
+  max-width: 240px;
+  height: 70px;
+  display: block;
+  text-align: center;
+  line-height: 70px;
+
+  @include respond(tab-land) {
+    bottom: 23%;
+    font-size: 2.2rem;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+  }
+
+  @include respond(phone) {
+    width: 40%;
+    height: 35px;
+    line-height: 35px;
+    bottom: 26%;
+  }
+}
+
+.flat-button div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.flat-button span.bg {
+  background: $color-primary;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: -5%;
+  transition: 0.3s ease-in-out all;
+  transform: skewX(-10deg);
+}
+
+.flat-button:hover span.bg {
+  width: 110%;
+}
+
+.flat-button span.base {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $color-primary;
+}
+
+.flat-button span.text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @include respond(phone) {
+    top: -5px;
+  }
+}
+
+.flat-button span.text:hover {
+  color: #1d1d1d;
+}
+///////////////////////////////////////////
+.flat-buttonFirst {
+  color: $color-primary;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 30%;
+  left: 13%;
+  width: 120%;
+  max-width: 240px;
+  height: 70px;
+  display: block;
+  text-align: center;
+  line-height: 70px;
+
+  @include respond(tab-land) {
+    bottom: 23%;
+    font-size: 2.2rem;
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+  }
+
+  @include respond(phone) {
+    width: 40%;
+    height: 35px;
+    line-height: 35px;
+    bottom: 26%;
+  }
+}
+
+.flat-buttonFirst div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.flat-buttonFirst span.bg {
+  background: $color-primary;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: -5%;
+  transition: 0.3s ease-in-out all;
+  transform: skewX(-10deg);
+}
+
+.flat-buttonFirst:hover span.bg {
+  width: 110%;
+}
+
+.flat-buttonFirst span.base {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid $color-primary;
+}
+
+.flat-buttonFirst span.text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  @include respond(phone) {
+    top: -5px;
+  }
+}
+
+.flat-buttonFirst span.text:hover {
+  color: #1d1d1d;
+}
+
+//////////////////
+// HOVER EFFECT //
+//////////////////
+
+#box1 {
+  display: flex;
+  position: absolute;
+  bottom: 68%;
+  left: 12.5%;
+  cursor: default;
+
+  animation: moveInLeft 1s ease-out;
+
+  @include respond(tab-land) {
+    bottom: 68%;
+  }
+
+  @include respond(phone) {
+    left: 3.5%;
+    bottom: 63.5%;
+  }
+}
+
+#box2 {
+  display: flex;
+  position: absolute;
+  bottom: 59%;
+  left: 11%;
+  cursor: default;
+
+  animation: moveInRight 1s ease-out;
+
+  @include respond(phone) {
+    left: 1.5%;
+    bottom: 58%;
+  }
+}
+
+#box3 {
+  display: flex;
+  position: absolute;
+  bottom: 49%;
+  left: 11%;
+  cursor: default;
+
+  animation: moveInLeft 1s ease-out;
+
+  @include respond(tab-land) {
+    bottom: 48%;
+  }
+
+  @include respond(phone) {
+    bottom: 52%;
+    left: 1.5%;
+  }
+}
+
+#me {
+  display: flex;
+  margin-left: 25px;
+  cursor: default;
+
+  @include respond(phone) {
+    margin-left: 10px;
+  }
+}
+
+.alpha1 {
+  color: $color-white;
+  font-size: 9rem;
+  font-family: Chelsea Market;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  cursor: default;
+
+  @include respond(tab-land) {
+    font-size: 7rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+}
+
+.alpha2 {
+  color: $color-white;
+  font-size: 7rem;
+  font-family: Chelsea Market;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  cursor: default;
+
+  @include respond(tab-land) {
+    font-size: 5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+}
+
+.alpha1.animated {
+  color: $color-primary;
+  animation: rubberBand 0.7s ease-in-out 1;
+  cursor: default;
+}
+
+.alpha2.animated {
+  color: $color-primary;
+  animation: rubberBand 0.7s ease-in-out 1;
+  cursor: default;
+}
+
+.projectsAlpha {
+  color: $color-white;
+  font-size: 5rem;
+  font-family: Chelsea Market;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  cursor: default;
+
+  @include respond(tab-land) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+}
+
+.projectsAlpha.animated {
+  animation: rubberBand 0.7s ease-in-out 1;
+  cursor: default;
+}
+
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    -ms-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    -ms-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    -ms-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    -ms-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    -ms-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+//////////////////////
+// Typing animation //
+//////////////////////
+
+.main-text {
+  position: relative;
+  // transform: translateX(30%);
+  font-family: Chelsea Market;
+}
+
+.main-text h1 {
+  font-size: 6.85rem;
+  color: #3c3c3c;
+  font-weight: 800;
+
+  @include respond(tab-land) {
+    font-size: 5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.7rem;
+    margin-top: 3px;
+  }
+}
+
+.main-text span {
+  color: #9f0c3d;
+  letter-spacing: 2px;
+}
+
+// fix typing text responsiveness
+.fixBeforeTyping {
+  margin-right: 30px;
+
+  @include respond(phone) {
+    margin-right: 10px;
+  }
+}
