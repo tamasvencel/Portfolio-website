@@ -89,9 +89,8 @@ $smaller-font-size: 1.6rem;
 #projectsTitleAboutMe {
   display: flex;
   position: relative;
-  position: absolute;
   margin-top: 4%;
-  margin-left: 19%;
+  margin-left: 30%;
   cursor: default;
 
   @include respond(phone) {

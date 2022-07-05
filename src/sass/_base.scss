@@ -19,13 +19,14 @@ $color-primary: #1ba19e;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
 
   @media only screen and (max-width: $bp-medium) {
     font-size: 50%;
   }
 
   @include respond(phone) {
-    font-size: 40%;
+    font-size: 70%;
   }
 }
 

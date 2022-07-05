@@ -90,9 +90,19 @@ $smaller-font-size: 1.6rem;
   position: relative;
   position: absolute;
   margin-top: -15%;
-  margin-left: 27%;
+  margin-left: 15%;
   cursor: default;
 
   @include respond(phone) {
   }
+}
+
+.work__title-aboutme {
+  text-align: left;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-left: 1rem;
+  font-family: Chelsea Market;
+  color: $color-white;
+  letter-spacing: 1;
 }

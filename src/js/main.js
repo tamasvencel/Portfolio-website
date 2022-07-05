@@ -285,7 +285,6 @@ $(document).ready(function () {
 
 $(document).scroll(function () {
   var y = $(this).scrollTop();
-  console.log(y);
   if (y > 15500) {
     $(".footer").addClass("footerTouchTransform");
   } else {
