@@ -38,7 +38,7 @@ $color-primary: #1ba19e;
 
   @include respond(tab-land) {
     transform: scale(80%);
-    left: 8%;
+    left: 1%;
   }
 
   @include respond(phone) {
