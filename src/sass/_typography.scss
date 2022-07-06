@@ -112,4 +112,12 @@ $smaller-font-size: 1.6rem;
   font-family: Chelsea Market;
   color: $color-white;
   letter-spacing: 1;
+
+  @include respond(tab-land) {
+    left: 60%;
+  }
+
+  @include respond(phone) {
+    padding-left: 5%;
+  }
 }
