@@ -54,7 +54,7 @@ $smaller-font-size: 1.6rem;
   animation: moveInBottom 1s ease-out;
 
   @include respond(tab-land) {
-    bottom: 40%;
+    bottom: 43%;
     font-size: 2rem;
   }
 
@@ -80,7 +80,14 @@ $smaller-font-size: 1.6rem;
   margin-bottom: 3%;
   cursor: default;
 
+  @include respond(tab-land) {
+    margin-bottom: -7%;
+    margin-left: 0%;
+  }
+
   @include respond(phone) {
+    margin-bottom: -30%;
+    margin-left: 5%;
   }
 }
 

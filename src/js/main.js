@@ -108,140 +108,140 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 // Skills svg //
 ////////////////
 
-let path = document.querySelector(".line-container-svg").lastElementChild;
-let pathLength = path.getTotalLength();
+// let path = document.querySelector(".line-container-svg").lastElementChild;
+// let pathLength = path.getTotalLength();
 
-path.style.strokeDasharray = pathLength + " " + pathLength;
+// path.style.strokeDasharray = pathLength + " " + pathLength;
 
-path.style.strokeDashoffset = pathLength;
+// path.style.strokeDashoffset = pathLength;
 
-window.addEventListener("scroll", () => {
-  // What % down is it?
-  var scrollPercentage =
-    (document.documentElement.scrollTop + document.body.scrollTop) /
-    (document.documentElement.scrollHeight -
-      document.documentElement.clientHeight);
-  // Length to offset the dashes
-  var drawLength = pathLength * scrollPercentage;
+// window.addEventListener("scroll", () => {
+//   // What % down is it?
+//   var scrollPercentage =
+//     (document.documentElement.scrollTop + document.body.scrollTop) /
+//     (document.documentElement.scrollHeight -
+//       document.documentElement.clientHeight);
+//   // Length to offset the dashes
+//   var drawLength = pathLength * scrollPercentage;
 
-  // Draw in reverse
-  path.style.strokeDashoffset = pathLength - drawLength + 650;
-});
+//   // Draw in reverse
+//   path.style.strokeDashoffset = pathLength - drawLength + 650;
+// });
 
 ////////////////
 // sticky svg //
 ////////////////
-$(document).ready(function () {
-  $(".sectionSkills").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".line-container").addClass("testDiv");
-      } else {
-        $(".line-container").removeClass("testDiv");
-      }
-    },
-    {
-      offset: "-100px;",
-    }
-  );
+// $(document).ready(function () {
+//   $(".sectionSkills").waypoint(
+//     function (direction) {
+//       if (direction == "down") {
+//         $(".line-container").addClass("testDiv");
+//       } else {
+//         $(".line-container").removeClass("testDiv");
+//       }
+//     },
+//     {
+//       offset: "-100px;",
+//     }
+//   );
 
-  $(".sectionAboutMe").waypoint(
-    function (direction) {
-      if (direction == "down") {
-        $(".line-container").fadeOut();
-      } else {
-        $(".line-container").fadeIn();
-      }
-    },
-    {
-      offset: "1200px;",
-    }
-  );
-});
+//   $(".sectionAboutMe").waypoint(
+//     function (direction) {
+//       if (direction == "down") {
+//         $(".line-container").fadeOut();
+//       } else {
+//         $(".line-container").fadeIn();
+//       }
+//     },
+//     {
+//       offset: "1200px;",
+//     }
+//   );
+// });
 
 /////////////////
 // skill icons //
 /////////////////
 
-// HTML
-$(document).scroll(function () {
-  var y = $(this).scrollTop();
-  if ((y > 5900) & (y < 12800)) {
-    $(".htmlIcon").fadeIn();
-  } else {
-    $(".htmlIcon").fadeOut();
-  }
-});
+// // HTML
+// $(document).scroll(function () {
+//   var y = $(this).scrollTop();
+//   if ((y > 5900) & (y < 12800)) {
+//     $(".htmlIcon").fadeIn();
+//   } else {
+//     $(".htmlIcon").fadeOut();
+//   }
+// });
 
-// CSS
-$(document).scroll(function () {
-  var y = $(this).scrollTop();
-  if ((y > 6600) & (y < 12800)) {
-    $(".cssIcon").fadeIn();
-  } else {
-    $(".cssIcon").fadeOut();
-  }
-});
+// // CSS
+// $(document).scroll(function () {
+//   var y = $(this).scrollTop();
+//   if ((y > 6600) & (y < 12800)) {
+//     $(".cssIcon").fadeIn();
+//   } else {
+//     $(".cssIcon").fadeOut();
+//   }
+// });
 
-// JS
-$(document).scroll(function () {
-  var y = $(this).scrollTop();
-  if ((y > 7700) & (y < 12800)) {
-    $(".jsIcon").fadeIn();
-  } else {
-    $(".jsIcon").fadeOut();
-  }
-});
+// // JS
+// $(document).scroll(function () {
+//   var y = $(this).scrollTop();
+//   if ((y > 7700) & (y < 12800)) {
+//     $(".jsIcon").fadeIn();
+//   } else {
+//     $(".jsIcon").fadeOut();
+//   }
+// });
 
-// SASS
-$(document).scroll(function () {
-  var y = $(this).scrollTop();
-  if ((y > 8300) & (y < 12800)) {
-    $(".sassIcon").fadeIn();
-  } else {
-    $(".sassIcon").fadeOut();
-  }
-});
+// // SASS
+// $(document).scroll(function () {
+//   var y = $(this).scrollTop();
+//   if ((y > 8300) & (y < 12800)) {
+//     $(".sassIcon").fadeIn();
+//   } else {
+//     $(".sassIcon").fadeOut();
+//   }
+// });
 
-// B
-$(document).scroll(function () {
-  var y = $(this).scrollTop();
-  if ((y > 9000) & (y < 12800)) {
-    $(".bootstrapIcon").fadeIn();
-  } else {
-    $(".bootstrapIcon").fadeOut();
-  }
-});
+// // B
+// $(document).scroll(function () {
+//   var y = $(this).scrollTop();
+//   if ((y > 9000) & (y < 12800)) {
+//     $(".bootstrapIcon").fadeIn();
+//   } else {
+//     $(".bootstrapIcon").fadeOut();
+//   }
+// });
 
-// NODEJS
-$(document).scroll(function () {
-  var y = $(this).scrollTop();
-  if ((y > 10300) & (y < 12800)) {
-    $(".nodejsIcon").fadeIn();
-  } else {
-    $(".nodejsIcon").fadeOut();
-  }
-});
+// // NODEJS
+// $(document).scroll(function () {
+//   var y = $(this).scrollTop();
+//   if ((y > 10300) & (y < 12800)) {
+//     $(".nodejsIcon").fadeIn();
+//   } else {
+//     $(".nodejsIcon").fadeOut();
+//   }
+// });
 
-// REACTJS
-$(document).scroll(function () {
-  var y = $(this).scrollTop();
-  if ((y > 11000) & (y < 12800)) {
-    $(".reactjsIcon").fadeIn();
-  } else {
-    $(".reactjsIcon").fadeOut();
-  }
-});
+// // REACTJS
+// $(document).scroll(function () {
+//   var y = $(this).scrollTop();
+//   if ((y > 11000) & (y < 12800)) {
+//     $(".reactjsIcon").fadeIn();
+//   } else {
+//     $(".reactjsIcon").fadeOut();
+//   }
+// });
 
-// NPM
-$(document).scroll(function () {
-  var y = $(this).scrollTop();
-  if ((y > 11600) & (y < 12800)) {
-    $(".npmIcon").fadeIn();
-  } else {
-    $(".npmIcon").fadeOut();
-  }
-});
+// // NPM
+// $(document).scroll(function () {
+//   var y = $(this).scrollTop();
+//   if ((y > 11600) & (y < 12800)) {
+//     $(".npmIcon").fadeIn();
+//   } else {
+//     $(".npmIcon").fadeOut();
+//   }
+// });
 
 // // ELECTRON
 // $(document).scroll(function () {

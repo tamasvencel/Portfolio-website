@@ -206,7 +206,7 @@ $color-white: rgb(221, 221, 221);
   animation: moveInLeft 1s ease-out;
 
   @include respond(tab-land) {
-    bottom: 68%;
+    bottom: 65%;
   }
 
   @include respond(phone) {
@@ -224,6 +224,10 @@ $color-white: rgb(221, 221, 221);
 
   animation: moveInRight 1s ease-out;
 
+  @include respond(tab-land) {
+    bottom: 58%;
+  }
+
   @include respond(phone) {
     left: 1.5%;
     bottom: 58%;
@@ -240,7 +244,7 @@ $color-white: rgb(221, 221, 221);
   animation: moveInLeft 1s ease-out;
 
   @include respond(tab-land) {
-    bottom: 48%;
+    bottom: 50%;
   }
 
   @include respond(phone) {

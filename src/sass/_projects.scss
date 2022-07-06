@@ -36,8 +36,14 @@ $color-primary: #1ba19e;
   transform: translateX(-50%);
   width: 100%;
 
+  @include respond(tab-land) {
+    transform: scale(80%);
+    left: 8%;
+  }
+
   @include respond(phone) {
-    width: 80%;
+    width: 70%;
+    left: 15%;
   }
 }
 
@@ -131,6 +137,14 @@ button::after {
   left: 65%;
   top: -40%;
   cursor: pointer;
+
+  @include respond(tab-land) {
+    left: 65%;
+  }
+
+  @include respond(phone) {
+    left: 10%;
+  }
 }
 
 button::after {
