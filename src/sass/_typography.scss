@@ -118,6 +118,7 @@ $smaller-font-size: 1.6rem;
   }
 
   @include respond(phone) {
-    padding-left: 5%;
+    padding-left: 30%;
+    text-align: center;
   }
 }

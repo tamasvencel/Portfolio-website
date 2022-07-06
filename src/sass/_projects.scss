@@ -43,7 +43,7 @@ $color-primary: #1ba19e;
 
   @include respond(phone) {
     width: 70%;
-    left: 15%;
+    left: 27%;
   }
 }
 
@@ -139,11 +139,13 @@ button::after {
   cursor: pointer;
 
   @include respond(tab-land) {
+    margin-top: 10%;
     left: 60%;
   }
 
   @include respond(phone) {
-    left: 10%;
+    margin-top: 10%;
+    left: 1%;
   }
 }
 

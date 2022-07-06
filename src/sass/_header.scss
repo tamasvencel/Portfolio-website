@@ -26,6 +26,10 @@ $color-white: rgb(221, 221, 221);
     display: block;
 
     animation: rotateLogo 1s;
+
+    @include respond(tab-land) {
+      height: 10rem;
+    }
   }
 }
 
