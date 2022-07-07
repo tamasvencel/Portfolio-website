@@ -11,8 +11,8 @@ $color-primary: #1ba19e;
   }
 
   @include respond(phone) {
-    height: 110vh;
-    margin-top: 80%;
+    height: 160vh;
+    margin-top: 140%;
   }
 }
 
@@ -207,6 +207,16 @@ $color-primary: #1ba19e;
   position: relative;
 }
 
+.skills_header h1 {
+  color: $color-white;
+  font-size: 5rem;
+  font-family: Chelsea Market;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  cursor: default;
+  margin-top: 10%;
+}
+
 .skills_header:after {
   content: "";
   position: absolute;
@@ -295,14 +305,4 @@ $color-primary: #1ba19e;
 .skill-icon {
   width: 100px;
   z-index: 2;
-}
-
-.skills_header h1 {
-  color: $color-white;
-  font-size: 5rem;
-  font-family: Chelsea Market;
-  font-weight: 700;
-  letter-spacing: 0.2rem;
-  cursor: default;
-  margin-top: 10%;
 }
