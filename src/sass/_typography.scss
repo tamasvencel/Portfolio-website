@@ -59,8 +59,9 @@ $smaller-font-size: 1.6rem;
   }
 
   @include respond(phone) {
-    bottom: 45%;
-    font-size: 2rem;
+    bottom: 42%;
+    left: 5%;
+    font-size: 2.5rem;
   }
 }
 

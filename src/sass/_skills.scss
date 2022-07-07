@@ -2,9 +2,18 @@ $color-white: rgb(221, 221, 221);
 $color-primary: #1ba19e;
 
 .sectionSkills {
+  margin-top: 10%;
   height: 100vh;
   background-size: cover;
   background-position: top;
+
+  @include respond(tab-land) {
+  }
+
+  @include respond(phone) {
+    height: 110vh;
+    margin-top: 80%;
+  }
 }
 
 .line-container {
@@ -103,71 +112,71 @@ $color-primary: #1ba19e;
 }
 
 // skill icons
-.htmlIcon {
-  position: sticky;
-  top: -24%;
-  left: 50%;
-  width: 7%;
-  height: 7%;
-}
+// .htmlIcon {
+//   position: sticky;
+//   top: -24%;
+//   left: 50%;
+//   width: 7%;
+//   height: 7%;
+// }
 
-.cssIcon {
-  position: sticky;
-  top: -21.5%;
-  left: 65%;
-  width: 7%;
-  height: 7%;
-}
+// .cssIcon {
+//   position: sticky;
+//   top: -21.5%;
+//   left: 65%;
+//   width: 7%;
+//   height: 7%;
+// }
 
-.jsIcon {
-  position: sticky;
-  top: 12%;
-  left: 61%;
-  width: 5%;
-  height: 5%;
-}
+// .jsIcon {
+//   position: sticky;
+//   top: 12%;
+//   left: 61%;
+//   width: 5%;
+//   height: 5%;
+// }
 
-.sassIcon {
-  position: sticky;
-  top: 11.7%;
-  left: 47%;
-  width: 5%;
-  height: 5%;
-  transform: rotate(15deg);
-}
+// .sassIcon {
+//   position: sticky;
+//   top: 11.7%;
+//   left: 47%;
+//   width: 5%;
+//   height: 5%;
+//   transform: rotate(15deg);
+// }
 
-.bootstrapIcon {
-  position: sticky;
-  top: 8.7%;
-  left: 33%;
-  width: 5%;
-  height: 5%;
-}
+// .bootstrapIcon {
+//   position: sticky;
+//   top: 8.7%;
+//   left: 33%;
+//   width: 5%;
+//   height: 5%;
+// }
 
-.nodejsIcon {
-  position: sticky;
-  top: 52.5%;
-  left: 33%;
-  width: 5%;
-  height: 1%;
-}
+// .nodejsIcon {
+//   position: sticky;
+//   top: 52.5%;
+//   left: 33%;
+//   width: 5%;
+//   height: 1%;
+// }
 
-.reactjsIcon {
-  position: sticky;
-  top: 54%;
-  left: 47%;
-  width: 5%;
-  height: 1%;
-}
+// .reactjsIcon {
+//   position: sticky;
+//   top: 54%;
+//   left: 47%;
+//   width: 5%;
+//   height: 1%;
+// }
 
-.npmIcon {
-  position: sticky;
-  top: 58%;
-  left: 61%;
-  width: 5%;
-  height: 1%;
-  transform: rotate(3deg);
-}
+// .npmIcon {
+//   position: sticky;
+//   top: 58%;
+//   left: 61%;
+//   width: 5%;
+//   height: 1%;
+//   transform: rotate(3deg);
+// }
 
 // .electronIcon {
 //   position: sticky;
@@ -184,3 +193,116 @@ $color-primary: #1ba19e;
 //   width: 5%;
 //   height: 1%;
 // }
+
+//
+
+.inner {
+  padding-top: 20px;
+}
+
+.skills_header {
+  text-align: center;
+  color: $color-white;
+  padding: 1rem;
+  position: relative;
+}
+
+.skills_header:after {
+  content: "";
+  position: absolute;
+  bottom: 10;
+  left: 49.8%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 8%;
+  background-color: $color-primary;
+  border-radius: 2px;
+}
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 7rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+  margin-top: 3%;
+
+  @include respond(tab-port) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 50px;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skill-box {
+  padding: 1rem;
+  color: #ddd;
+  cursor: default;
+}
+
+.skill-box:hover > .skill-title:after,
+.skill-box:hover > .skill-title:before {
+  width: 35px;
+}
+
+.skill-box:hover .img {
+  transform: translateY(-10px);
+}
+
+.skill-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.img:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  transform: scale(160%);
+  background: rgba(100, 100, 100, 0.326);
+  border-radius: 45px;
+}
+
+.skill-title h3 {
+  color: $color-white;
+  margin-top: 0.5rem;
+}
+
+.skill-icon {
+  width: 100px;
+  z-index: 2;
+}
+
+.skills_header h1 {
+  color: $color-white;
+  font-size: 5rem;
+  font-family: Chelsea Market;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  cursor: default;
+  margin-top: 10%;
+}
