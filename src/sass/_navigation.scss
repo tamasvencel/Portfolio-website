@@ -1,0 +1,86 @@
+$color-white: #dddddd;
+$color-primary: #168b89;
+$color-primary-dark: #1a6a68;
+
+.nav {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  height: 9rem;
+  width: 100%;
+  padding: 0 6rem;
+  z-index: 100;
+}
+
+/*logo-text*/
+.logo-text {
+  font-size: 2.3rem;
+  font-weight: 400;
+  display: block;
+  position: absolute;
+  left: 15rem;
+}
+
+/* nav and stickly class at the same time */
+.nav {
+  height: 0%;
+  margin-top: 50px;
+}
+
+.nav.sticky {
+  position: fixed;
+  background-color: rgba(22, 45, 44, 0.818);
+  height: 7%;
+  opacity: 95%;
+  transition: height 0.5s;
+  margin-top: 0;
+}
+
+.nav__logo {
+  height: 4.5rem;
+  transition: all 0.3s;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav__item {
+  margin-left: 4rem;
+}
+
+.nav__link:link,
+.nav__link:visited {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-family: Indie Flower;
+  color: $color-white;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s;
+  line-height: 2.2rem;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  transform: scale(90%);
+}
+
+.nav__link--btn:link,
+.nav__link--btn:visited {
+  padding: 0.8rem 2.5rem;
+  border-radius: 3rem;
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.nav__link--btn:hover,
+.nav__link--btn:active {
+  color: inherit;
+  background-color: $color-primary;
+  color: #56152a;
+  box-shadow: 13px 13px 21px 3px #5021219b;
+}

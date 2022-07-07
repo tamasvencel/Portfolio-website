@@ -7,6 +7,7 @@ $color-primary: #1ba19e;
   background-size: cover;
   background-position: top;
   font-family: "Libre Franklin";
+  scroll-margin-top: 40rem;
 
   @include respond(tab-land) {
     height: 80vh;

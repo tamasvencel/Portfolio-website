@@ -6,6 +6,7 @@ $color-primary: #1ba19e;
   height: 100vh;
   background-size: cover;
   background-position: top;
+  scroll-margin-top: -10rem;
 
   @include respond(tab-land) {
     height: 90vh;
