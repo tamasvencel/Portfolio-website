@@ -15,6 +15,7 @@ $color-primary: #1ba19e;
   }
 
   @include respond(phone) {
+    height: 150vh;
   }
 }
 

@@ -9,7 +9,7 @@ $color-primary: #1ba19e;
   font-family: "Libre Franklin";
 
   @include respond(tab-land) {
-    height: 50vh;
+    height: 80vh;
   }
 
   @include respond(phone) {
@@ -145,5 +145,6 @@ $color-primary: #1ba19e;
 
   @include respond(phone) {
     margin-top: 10%;
+    margin-left: -15%;
   }
 }
