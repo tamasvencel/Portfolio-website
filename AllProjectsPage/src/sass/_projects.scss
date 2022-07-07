@@ -131,6 +131,10 @@ button::after {
   left: -40px;
   transform: scale(0.6);
   cursor: pointer;
+
+  @include respond(phone) {
+    display: none;
+  }
 }
 
 button::after {
