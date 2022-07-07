@@ -54,7 +54,7 @@ $smaller-font-size: 1.6rem;
   animation: moveInBottom 1s ease-out;
 
   @include respond(tab-land) {
-    bottom: 43%;
+    bottom: 40%;
     font-size: 2rem;
   }
 

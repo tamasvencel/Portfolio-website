@@ -8,6 +8,7 @@ $color-primary: #1ba19e;
   background-position: top;
 
   @include respond(tab-land) {
+    height: 55vh;
   }
 
   @include respond(phone) {

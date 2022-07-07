@@ -9,6 +9,7 @@ $color-primary: #1ba19e;
   font-family: "Libre Franklin";
 
   @include respond(tab-land) {
+    height: 50vh;
   }
 
   @include respond(phone) {
@@ -67,6 +68,7 @@ $color-primary: #1ba19e;
     width: 15%;
     height: 15%;
     margin-top: 20%;
+    margin-right: 20%;
   }
 
   @include respond(phone) {
@@ -85,6 +87,7 @@ $color-primary: #1ba19e;
     height: 25%;
     margin-top: 40%;
     margin-left: -31%;
+    display: none;
   }
 
   @include respond(phone) {
@@ -133,18 +136,14 @@ $color-primary: #1ba19e;
   font-weight: 700;
   letter-spacing: 0.2rem;
   cursor: default;
-  margin-top: 10%;
+  margin-top: -7%;
   width: 170%;
-}
 
-.aboutme_header:after {
-  content: "";
-  position: absolute;
-  bottom: 10;
-  left: 49.8%;
-  transform: translateX(-50%);
-  height: 3px;
-  width: 8%;
-  background-color: $color-primary;
-  border-radius: 2px;
+  @include respond(tab-land) {
+    margin-left: -60%;
+  }
+
+  @include respond(phone) {
+    margin-top: 10%;
+  }
 }

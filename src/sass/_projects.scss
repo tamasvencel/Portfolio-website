@@ -9,6 +9,13 @@ $color-primary: #1ba19e;
   height: 140vh;
   background-size: cover;
   background-position: top;
+
+  @include respond(tab-land) {
+    height: 80vh;
+  }
+
+  @include respond(phone) {
+  }
 }
 
 .container {

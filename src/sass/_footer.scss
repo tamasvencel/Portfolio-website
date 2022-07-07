@@ -90,12 +90,12 @@ footer button::after {
   cursor: pointer;
 
   @include respond(tab-land) {
-    margin-left: 15%;
+    margin-left: 7%;
     margin-bottom: 8%;
   }
 
   @include respond(phone) {
-    margin-left: 17%;
+    margin-left: 15%;
     margin-bottom: 17%;
   }
 }
