@@ -302,10 +302,12 @@ ScrollReveal().reveal(".aboutMeParagraph");
 ScrollReveal().reveal(".techSVG");
 ScrollReveal().reveal(".designSVG");
 ScrollReveal().reveal(".internetSVG", { delay: 300 });
+ScrollReveal().reveal(".projectsAlpha");
 
 // Navigation
 const nav = document.querySelector(".nav");
 const header = document.querySelector(".headerCyan");
+const projectsSection = document.querySelector(".sectionProjects");
 
 document.querySelector(".nav__links").addEventListener("click", function (e) {
   e.preventDefault();
