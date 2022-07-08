@@ -297,12 +297,17 @@ ScrollReveal({ reset: true });
 ScrollReveal({ duration: 1500 });
 ScrollReveal().reveal(".work__card");
 ScrollReveal().reveal(".allProjectsLink");
-ScrollReveal().reveal(".aboutmeTitle");
-ScrollReveal().reveal(".aboutMeParagraph");
+ScrollReveal().reveal(".aboutme_header");
+ScrollReveal().reveal(".aboutMeParagraph", { delay: 200 });
 ScrollReveal().reveal(".techSVG");
 ScrollReveal().reveal(".designSVG");
 ScrollReveal().reveal(".internetSVG", { delay: 300 });
 ScrollReveal().reveal(".projectsAlpha");
+ScrollReveal().reveal(".projects_header");
+ScrollReveal().reveal(".skills_header", { delay: 300 });
+ScrollReveal().reveal(".skill-box-row-1", { delay: 150 });
+ScrollReveal().reveal(".skill-box-row-2", { delay: 200 });
+ScrollReveal().reveal(".skill-box-row-3", { delay: 250 });
 
 // Navigation
 const nav = document.querySelector(".nav");
