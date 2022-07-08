@@ -45,6 +45,8 @@ $color-primary-dark: #1a6a68;
   display: flex;
   align-items: center;
   list-style: none;
+
+  animation: moveInTop 1s ease-out;
 }
 
 .nav__item {
