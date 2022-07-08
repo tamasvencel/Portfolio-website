@@ -9,7 +9,7 @@ $color-primary: #1ba19e;
   scroll-margin-top: -10rem;
 
   @include respond(tab-land) {
-    height: 90vh;
+    height: 70vh;
   }
 
   @include respond(phone) {
