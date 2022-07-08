@@ -12,11 +12,11 @@ $color-primary: #1ba19e;
   scroll-margin-top: 10rem;
 
   @include respond(tab-land) {
-    height: 80vh;
+    height: 100vh;
   }
 
   @include respond(phone) {
-    height: 150vh;
+    height: 170vh;
   }
 }
 
@@ -257,4 +257,13 @@ button:hover::after {
   cursor: default;
   margin-bottom: 5%;
   margin-left: 3%;
+
+  @include respond(tab-port) {
+    margin-bottom: -5%;
+  }
+
+  @include respond(phone) {
+    margin-top: 20%;
+    margin-bottom: -50%;
+  }
 }

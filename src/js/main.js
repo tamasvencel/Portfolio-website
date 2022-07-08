@@ -296,7 +296,7 @@ $(document).scroll(function () {
 ScrollReveal({ reset: true });
 ScrollReveal({ duration: 1500 });
 ScrollReveal().reveal(".work__card");
-ScrollReveal().reveal(".allProjectsLink", { delay: 300 });
+ScrollReveal().reveal(".allProjectsLink");
 ScrollReveal().reveal(".aboutmeTitle");
 ScrollReveal().reveal(".aboutMeParagraph");
 ScrollReveal().reveal(".techSVG");
