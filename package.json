@@ -5,9 +5,8 @@
   "default": "index.html",
   "scripts": {
     "server": "webpack serve --open",
-    "watch": "webpack --watch",
-    "build": "webpack --mode=production --node-env=production",
-    "start": "npm-run-all --parallel server watch",
+    "build": "webpack --mode=production --node-env=production --watch",
+    "start": "npm-run-all --parallel build server",
     "---------------------------------------------------------------------------": "",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",

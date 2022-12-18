@@ -33,14 +33,14 @@ const config = {
     new HtmlWebpackPlugin({
       inject: true,
       template: "./index.html",
-      minify: false,
+      minify: true,
       chunks: ["main"],
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
       inject: true,
       template: "./AllProjectsPage/AllProjects.html",
-      minify: false,
+      minify: true,
       chunks: ["allProjects"],
       filename: "AllProjects.html",
     }),
@@ -69,6 +69,10 @@ const config = {
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|otf|jpeg)$/i,
         type: "asset/resource",
+      },
+      {
+        test: /\.(html)$/,
+        use: ["html-loader"],
       },
 
       // Add your rules for custom modules here
