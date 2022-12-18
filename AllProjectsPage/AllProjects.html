@@ -22,9 +22,13 @@
       rel="stylesheet"
     />
 
-    <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="<%=require('/src/img/logo.png')%>"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="src/sass/main.scss" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <title>Projects</title>
   </head>
@@ -60,7 +64,7 @@
       <div class="work__container container grid">
         <div class="work__card mix JSchmedtmannCourses">
           <img
-            src="/src/img/OmnifoodIndex.jpg"
+            src="<%=require('/src/img/OmnifoodIndex.jpg')%>"
             alt="Omnifood"
             class="work__img"
           />
@@ -85,7 +89,7 @@
 
         <div class="work__card mix NoCourse">
           <img
-            src="/src/img/ExploreTransylvaniaIndex.jpg"
+            src="<%=require('/src/img/ExploreTransylvaniaIndex.jpg')%>"
             alt="ExploreTransylvania"
             class="work__img"
           />
@@ -113,7 +117,7 @@
 
         <div class="work__card mix JSchmedtmannCourses">
           <img
-            src="/src/img/NatoursIndex.jpg"
+            src="<%=require('/src/img/NatoursIndex.jpg')%>"
             alt="Natours"
             class="work__img"
           />
@@ -138,7 +142,7 @@
 
         <div class="work__card mix JSchmedtmannCourses">
           <img
-            src="/src/img/BankistIndex.jpg"
+            src="<%=require('/src/img/BankistIndex.jpg')%>"
             alt="Bankist"
             class="work__img"
           />
@@ -166,7 +170,7 @@
 
         <div class="work__card mix JSchmedtmannCourses">
           <img
-            src="/src/img/ForkifyIndex.jpg"
+            src="<%=require('/src/img/ForkifyIndex.jpg')%>"
             alt="Forkify"
             class="work__img"
           />
@@ -194,7 +198,7 @@
 
         <div class="work__card mix JSchmedtmannCourses">
           <img
-            src="/src/img/BankingAppIndex.jpg"
+            src="<%=require('/src/img/BankingAppIndex.jpg')%>"
             alt="BankingApp"
             class="work__img"
           />
@@ -231,11 +235,5 @@
         loop: true,
       });
     </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./Vendors/jquery.waypoints.min.js"></script>
-
-    <script src="/src/js/mixitup.min.js"></script>
-    <script src="src/js/main.js"></script>
   </body>
 </html>

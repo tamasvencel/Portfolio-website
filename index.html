@@ -10,6 +10,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
   <script src="https://unpkg.com/scrollreveal"></script>
 
   <script src="https://kit.fontawesome.com/4ef0435f3a.js" crossorigin="anonymous"></script>
@@ -20,10 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Indie+Flower&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="src/img/logo.png" type="image/x-icon" />
-
-    <link rel="stylesheet" href="src/sass/main.scss" />
-
+    <link rel="shortcut icon" href="<%=require('/src/img/logo.png')%>" type="image/x-icon" />
 
     <title>Portfolio</title>
   </head>
@@ -51,7 +50,7 @@
 
       <div class="headerGray">
         <img
-          src="src/img/logo.png"
+        src="<%=require('/src/img/logo.png')%>"
           alt="logo"
           class="header__logo header__logo_light"
         />
@@ -136,7 +135,7 @@
       </div>
       <div class="work__container container grid">
         <div class="work__card mix JSchmedtmannCourses">
-          <img src="/src/img/OmnifoodIndex.jpg" alt="Omnifood" class="work__img">
+          <img src="<%=require('/src/img/OmnifoodIndex.jpg')%>" alt="Omnifood" class="work__img">
           <h3 class="work__title">Omnifood</h3>
           <a href="https://website-omnifood.netlify.app/" class="work__button">
             View <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow" viewBox="0 0 16 16">
@@ -146,7 +145,7 @@
         </div>
 
         <div class="work__card mix NoCourse">
-          <img src="/src/img/ExploreTransylvaniaIndex.jpg" alt="ExploreTransylvania" class="work__img">
+          <img src="<%=require('/src/img/ExploreTransylvaniaIndex.jpg')%>" alt="ExploreTransylvania" class="work__img">
           <h3 class="work__title">ExploreTransylvania</h3>
           <a href="https://explore-transylvania.netlify.app" class="work__button">
             View <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow" viewBox="0 0 16 16">
@@ -156,7 +155,7 @@
         </div>
 
         <div class="work__card mix JSchmedtmannCourses">
-          <img src="/src/img/NatoursIndex.jpg" alt="Natours" class="work__img">
+          <img src="<%=require('/src/img/NatoursIndex.jpg')%>" alt="Natours" class="work__img">
           <h3 class="work__title">Natours</h3>
           <a href="https://explore-natours.netlify.app" class="work__button">
             View <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow" viewBox="0 0 16 16">
@@ -166,7 +165,7 @@
         </div>
 
         <div class="work__card mix JSchmedtmannCourses">
-          <img src="/src/img/BankistIndex.jpg" alt="Bankist" class="work__img">
+          <img src="<%=require('/src/img/BankistIndex.jpg')%>" alt="Bankist" class="work__img">
           <h3 class="work__title">Bankist</h3>
           <a href="https://project-bankist-website.netlify.app" class="work__button">
             View <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow" viewBox="0 0 16 16">
@@ -176,7 +175,7 @@
         </div>
 
         <div class="work__card mix JSchmedtmannCourses">
-          <img src="/src/img/ForkifyIndex.jpg" alt="Forkify" class="work__img">
+          <img src="<%=require('/src/img/ForkifyIndex.jpg')%>" alt="Forkify" class="work__img">
           <h3 class="work__title">Forkify</h3>
           <a href="https://forkify-recipe-webapp.netlify.app" class="work__button">
             View <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow" viewBox="0 0 16 16">
@@ -186,7 +185,7 @@
         </div>
 
         <div class="work__card mix JSchmedtmannCourses">
-          <img src="/src/img/BankingAppIndex.jpg" alt="BankingApp" class="work__img">
+          <img src="<%=require('/src/img/BankingAppIndex.jpg')%>" alt="BankingApp" class="work__img">
           <h3 class="work__title">BankingApp</h3>
           <a href="https://bst-bankist.netlify.app" class="work__button">
             View <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow" viewBox="0 0 16 16">
@@ -194,7 +193,7 @@
             </svg>	
           </a>
         </div>
-        <a href="/AllProjectsPage/AllProjects.html" class="allProjectsLink"><button>All projects</button></a>
+        <a href="AllProjects.html" class="allProjectsLink"><button>All projects</button></a>
         <!-- <svg class="arrows">
           <path class="a1" d="M0 0 L30 32 L60 0"></path>
 					<path class="a2" d="M0 20 L30 52 L60 20"></path>
@@ -366,10 +365,10 @@
           <h1>About me</h1>
         </div>
       <p class="aboutMeParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Gravida cum sociis natoque penatibus et magnis dis. Ut sem nulla pharetra diam sit amet nisl suscipit adipiscing. In fermentum posuere urna nec tincidunt. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Arcu dui vivamus arcu felis bibendum ut tristique et egestas.<br><br> Quis eleifend quam adipiscing vitae. Condimentum lacinia quis vel eros donec. Lectus sit amet est placerat. Enim tortor at auctor urna nunc id. Praesent elementum facilisis leo vel fringilla est ullamcorper. </p>
-      <img src="/src/img/tech.svg" alt="technology" class="techSVG"></img>
-      <img src="/src/img/design-skills.svg" alt="design" class="designSVG"></img>
+      <img src="<%=require('/src/img/tech.svg')%>" alt="technology" class="techSVG"></img>
+      <img src="<%=require('/src/img/design-skills.svg')%>" alt="design" class="designSVG"></img>
       <img
-          src="src/img/logo.png"
+      src="<%=require('/src/img/logo.png')%>"
           alt="logo"
           class="internetSVG"
         />
@@ -389,7 +388,7 @@
       </a>
   </div>
 
-    <img src="/src/img/logo.png" alt="Logo" class="footer__logo" />
+    <img src="<%=require('/src/img/logo.png')%>" alt="Logo" class="footer__logo" />
     <p class="footer__copyright">
       &copy; Copyright by
       <a
@@ -410,11 +409,5 @@
         loop: true
       })
     </script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="./Vendors/jquery.waypoints.min.js"></script>
-
-    <script src="/src/js/mixitup.min.js"></script>
-    <script src="src/js/main.js"></script>
   </body>
 </html>

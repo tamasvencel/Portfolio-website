@@ -1,11 +1,11 @@
 {
-  "name": "portfolio-website",
+  "name": "my-portfolio",
   "version": "1.0.0",
-  "description": "",
-  "default": "AllProjects.html",
+  "description": "Portfolio",
+  "default": "index.html",
   "scripts": {
-    "start": "parcel AllProjects.html",
-    "build": "parcel build AllProjects.html --dist-dir ./dist",
+    "start": "webpack serve --open",
+    "build": "webpack --mode=production --node-env=production",
     "---------------------------------------------------------------------------": "",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
@@ -14,24 +14,40 @@
     "concat:css": "concat -o css/style.concat.css css/icon-font.css css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.concat.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production"
   },
   "author": "Venci",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
     "@parcel/transformer-image": "^2.4.1",
     "@parcel/transformer-sass": "^2.4.1",
+    "@webpack-cli/generators": "^3.0.1",
     "autoprefixer": "^10.4.4",
+    "babel-loader": "^9.1.0",
     "concat": "^1.0.3",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
     "node-sass": "^7.0.1",
     "npm-run-all": "^4.1.5",
-    "parcel": "^2.4.1",
-    "postcss-cli": "^9.1.0"
+    "postcss-cli": "^9.1.0",
+    "postcss-loader": "^7.0.2",
+    "sass": "^1.57.0",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
     "chokidar": "^3.5.3",
     "core-js": "^3.21.1",
+    "locomotive-scroll": "^4.1.4",
     "lodash-es": "^4.17.21",
+    "mini-css-extract-plugin": "^2.7.2",
     "postcss": "^8.4.12",
     "regenerator-runtime": "^0.13.9"
   }

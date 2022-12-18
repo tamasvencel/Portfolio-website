@@ -1,4 +1,7 @@
 "use strict";
+import main from "../sass/main.scss";
+import mixitup from "./mixitup.min.js";
+import jqueryWaypoints from "../../Vendors/jquery.waypoints.min.js";
 
 ///////////////
 // Animation //

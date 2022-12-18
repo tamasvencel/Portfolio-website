@@ -1,4 +1,6 @@
 "use strict";
+import main from "../sass/main.scss";
+import jqueryWaypoints from "../../Vendors/jquery.waypoints.min.js";
 
 ///////////////
 // Animation //
@@ -60,24 +62,6 @@ function applyCursorRippleEffect(e) {
 
   ripple.style.animation = "ripple-effect .4s  linear";
   ripple.onanimationend = () => document.body.removeChild(ripple);
-}
-
-//////////////////////////////
-// Mixitup filter portfolio //
-//////////////////////////////
-
-let containerEl = document.querySelector(".work__container");
-let mixerPortfolio;
-
-if (containerEl) {
-  mixerPortfolio = mixitup(containerEl, {
-    selectors: {
-      target: ".work__card",
-    },
-    animation: {
-      duration: 300,
-    },
-  });
 }
 
 // link active work
