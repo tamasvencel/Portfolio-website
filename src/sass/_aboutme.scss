@@ -48,7 +48,7 @@ $color-primary: #1ba19e;
   margin-top: 0%;
   margin-left: 15%;
 
-  @include respond(tab-land) {
+  @include respond(laptop) {
     margin-top: 10%;
   }
 
@@ -69,7 +69,7 @@ $color-primary: #1ba19e;
   margin-top: 0%;
   margin-left: 8%;
 
-  @include respond(tab-land) {
+  @include respond(laptop) {
     margin-top: 10%;
   }
 
@@ -91,7 +91,7 @@ $color-primary: #1ba19e;
   margin-top: 12%;
   margin-left: -22%;
 
-  @include respond(tab-land) {
+  @include respond(laptop) {
     margin-top: 23%;
   }
 
