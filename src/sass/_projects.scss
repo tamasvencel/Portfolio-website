@@ -11,8 +11,18 @@ $color-primary: #1ba19e;
   background-position: top;
   scroll-margin-top: 10rem;
 
+  @include respond(laptop) {
+    height: 130vh;
+    margin-bottom: 50%;
+  }
+
   @include respond(tab-land) {
     height: 100vh;
+  }
+
+  @include respond(tab-port) {
+    height: 130vh;
+    margin-bottom: 30%;
   }
 
   @include respond(phone) {

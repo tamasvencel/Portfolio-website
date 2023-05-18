@@ -48,6 +48,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
       @content;
     } //1200px
   }
+  @if $breakpoint == laptop {
+    @media only screen and (max-width: 90em) {
+      @content;
+    } //from 1900px
+  }
   // @if $breakpoint == big-desktop {
   //   @media only screen and (max-width: 118.75em) {
   //     @content;

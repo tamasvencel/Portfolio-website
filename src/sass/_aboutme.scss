@@ -3,7 +3,7 @@ $color-primary: #1ba19e;
 
 .sectionAboutMe {
   margin-top: 40%;
-  height: 70vh;
+  height: 40vh;
   background-size: cover;
   background-position: top;
   font-family: "Libre Franklin";
@@ -45,7 +45,7 @@ $color-primary: #1ba19e;
 .techSVG {
   width: 10%;
   height: 10%;
-  margin-top: 10%;
+  margin-top: 0%;
   margin-left: 15%;
 
   @include respond(tab-land) {
@@ -62,7 +62,7 @@ $color-primary: #1ba19e;
 .designSVG {
   width: 10%;
   height: 10%;
-  margin-top: 10%;
+  margin-top: 0%;
   margin-left: 8%;
 
   @include respond(tab-land) {
@@ -80,7 +80,7 @@ $color-primary: #1ba19e;
 .internetSVG {
   width: 15%;
   height: 15%;
-  margin-top: 23%;
+  margin-top: 12%;
   margin-left: -22%;
 
   @include respond(tab-land) {
