@@ -10,6 +10,7 @@ $color-primary: #1ba19e;
   background-size: cover;
   background-position: top;
   scroll-margin-top: 10rem;
+  margin-bottom: 20%;
 
   @include respond(laptop) {
     height: 130vh;
